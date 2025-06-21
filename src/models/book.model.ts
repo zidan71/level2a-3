@@ -43,4 +43,8 @@ bookSchema.methods.decreaseCopies = async function (quantity: number) {
   await this.save();
 };
 
+bookSchema.post("save", function (doc) {
+  console.log(`📚 Book titled "${doc.title}" has been saved successfully!`);
+});
+
 export const Book = model<BookDocument>('Book', bookSchema);
