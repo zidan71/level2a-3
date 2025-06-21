@@ -24,6 +24,7 @@ export const getAllBooks = async(req:Request,res:Response) => {
     try{
         const {filter,sortBy = 'createdAt',sort = 'desc',limit = '10'} = req.query
 
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const query:any ={};
         if(filter){
             query.genre = filter;

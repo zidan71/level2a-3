@@ -23,6 +23,25 @@ A RESTful API built using **Express**, **TypeScript**, and **MongoDB** to manage
 
 ---
 
+## 🚀 Setup Instructions (Run Locally)
+
+Follow these steps to run the project on your local machine:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/zidan71/level2a-3
+
+Install Dependencies
+npm install
+
+npm run dev
+
+Build TypeScript code:
+npm run build
+
+Run compiled code:
+npm start
+
 📚 Library Management API (Simple Summary)
 In this API project, you can manage books in a library. You can:
 
